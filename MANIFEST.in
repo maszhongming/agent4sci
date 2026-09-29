@@ -1,0 +1,5 @@
+include README.md LICENSE .env.example
+recursive-include agent4sci *.yaml
+recursive-include agent4sci/prompts *.yaml
+recursive-include agent4sci/skills *
+recursive-include docs *.md

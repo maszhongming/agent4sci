@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent4sci"
+version = "0.1.0"
+description = "Run frontier coding agents on scientific ML benchmarks: hill-climb, evaluate, and audit."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "Ming Zhong" },
+  { name = "Stacy Li" },
+]
+keywords = ["agents", "benchmark", "ml-for-science", "hill-climbing", "evaluation"]
+dependencies = [
+  "pyyaml>=6.0",
+  "rich>=13.0",
+  "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+agent4sci = "agent4sci.cli:main"
+
+[project.urls]
+Paper = "https://drive.google.com/file/d/1cozxXYHPMXKWYlLl5JM74JC-tXleUdyw/view?usp=sharing"
+Homepage = "https://github.com/maszhongming/agent4sci"
+
+[tool.setuptools]
+packages = ["agent4sci", "agent4sci.backends"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+agent4sci = ["*.yaml", "prompts/*.yaml", "skills/**/*"]
+
+[tool.pytest.ini_options]
+# Only collect the real test suite; `agent4sci run` writes agent-authored
+# Python (e.g. runs/**/eval_test.py) under ./runs, which must not be collected.
+testpaths = ["tests"]

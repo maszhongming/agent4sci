@@ -1,0 +1,51 @@
+{
+    "skipDangerousModePermissionPrompt": true,
+    "env": {
+      "DISABLE_AUTOUPDATER": "1",
+      "BASH_DEFAULT_TIMEOUT_MS": "1200000",
+      "BASH_MAX_TIMEOUT_MS": "3600000"
+    },
+    "permissions": {
+      "allow": [
+        "WebSearch",
+        "WebFetch"
+      ]
+    },
+    "hooks": {
+      "PermissionRequest": [
+        {
+          "matcher": "Read|Edit|Write|Bash",
+          "hooks": [
+            {
+              "type": "command",
+              "command": "bash -c 'input=$(cat); if printf \"%s\" \"$input\" | grep -qF \".claude/\"; then echo \"{\\\"hookSpecificOutput\\\":{\\\"hookEventName\\\":\\\"PermissionRequest\\\",\\\"decision\\\":{\\\"behavior\\\":\\\"allow\\\"}}}\"; fi; exit 0'"
+            }
+          ]
+        }
+      ],
+      "PreToolUse": [
+        {
+          "matcher": "*",
+          "hooks": [
+            {
+              "type": "command",
+              "command": "bash /workspace/.claude/hooks/reminder.sh",
+              "timeout": 5
+            }
+          ]
+        }
+      ],
+      "PostToolUse": [
+        {
+          "matcher": "Skill",
+          "hooks": [
+            {
+              "type": "command",
+              "command": "bash /workspace/.claude/hooks/checklist_ack.sh",
+              "timeout": 5
+            }
+          ]
+        }
+      ]
+    }
+}

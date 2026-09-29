@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /workspace/.codex/hooks/stop_guard.py",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+# Model presets. Each names a model family (claude | codex) plus the model flag
+# and reasoning effort passed to the agent's CLI. `claude-opus-4.8` is the
+# default; `claude-opus-4.6` and `codex-5.4` reproduce the configurations used
+# in the Agent4Sci paper. Edit model_flag / effort to match the models your CLI
+# has access to.
+
+claude-opus-4.8:
+  family: claude
+  model_flag: "claude-opus-4-8[1m]"   # Opus 4.8 (latest) with 1M-token context; drop "[1m]" for the default context
+  effort: high
+
+claude-opus-4.6:
+  family: claude
+  model_flag: "opus[1m]"   # Opus 4.6 with 1M-token context (paper configuration)
+  effort: high
+
+codex-5.4:
+  family: codex
+  model_flag: "gpt-5.4"
+  effort: xhigh

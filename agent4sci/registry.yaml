@@ -1,0 +1,90 @@
+# Agent4Sci benchmark registry: project name -> container image (+ metadata).
+# Images live on GHCR and are self-contained: on launch they download the
+# train/val (hill-climb) or test (evaluate) split from HuggingFace.
+# The 20 published Agent4Sci suite benchmarks, plus PFDelta_2000, the harder
+# 2000-bus case-study variant from the paper (not part of the suite of 20).
+
+ATAT:
+  image: ghcr.io/maszhongming/agent4sci-atat:latest
+  domain: Astronomy
+  task: Transient classification
+CarbonGlobe:
+  image: ghcr.io/maszhongming/agent4sci-carbonglobe:latest
+  domain: Ecology
+  task: Carbon forecasting
+CheMixHub:
+  image: ghcr.io/maszhongming/agent4sci-chemixhub:latest
+  domain: Chemistry
+  task: Chemical-mixture property prediction
+CosmoBench:
+  image: ghcr.io/maszhongming/agent4sci-cosmobench:latest
+  domain: Cosmology
+  task: Cosmological parameter regression
+DART-Eval:
+  image: ghcr.io/maszhongming/agent4sci-dart-eval:latest
+  domain: Genomics
+  task: Regulatory-DNA chromatin-activity prediction
+ESCAPE:
+  image: ghcr.io/maszhongming/agent4sci-escape:latest
+  domain: Bioengineering
+  task: Antimicrobial-peptide classification
+GEO-Bench-2:
+  image: ghcr.io/maszhongming/agent4sci-geo-bench-2:latest
+  domain: Geography
+  task: Crop-type segmentation
+GTPBD:
+  image: ghcr.io/maszhongming/agent4sci-gtpbd:latest
+  domain: Geography
+  task: Terraced-parcel segmentation
+LITHOS:
+  image: ghcr.io/maszhongming/agent4sci-lithos:latest
+  domain: Geology
+  task: Mineral classification (petrography)
+Mars-Bench:
+  image: ghcr.io/maszhongming/agent4sci-mars-bench:latest
+  domain: Astronomy
+  task: Terrain segmentation and cone detection
+MassSpecGym:
+  image: ghcr.io/maszhongming/agent4sci-massspecgym:latest
+  domain: Chemistry
+  task: Molecule retrieval from mass spectra
+MOTIVE:
+  image: ghcr.io/maszhongming/agent4sci-motive:latest
+  domain: Bioengineering
+  task: Drug-target inductive link prediction
+NeuroGraph:
+  image: ghcr.io/maszhongming/agent4sci-neurograph:latest
+  domain: Neuroscience
+  task: Fluid-intelligence regression
+PFDelta:
+  image: ghcr.io/maszhongming/agent4sci-pfdelta:latest
+  domain: Physics
+  task: Full-topology power-flow estimation
+PFDelta_2000:
+  image: ghcr.io/maszhongming/agent4sci-pfdelta_2000:latest
+  domain: Physics
+  task: Full-topology power flow (2000-bus, latency-constrained)
+ProteinGym:
+  image: ghcr.io/maszhongming/agent4sci-proteingym:latest
+  domain: Bioengineering
+  task: DMS substitution fitness prediction
+SR-CACO-2:
+  image: ghcr.io/maszhongming/agent4sci-sr-caco-2:latest
+  domain: Biology
+  task: Confocal microscopy super-resolution
+TIDMAD:
+  image: ghcr.io/maszhongming/agent4sci-tidmad:latest
+  domain: Physics
+  task: Dark-matter time-series denoising
+TreeFinder:
+  image: ghcr.io/maszhongming/agent4sci-treefinder:latest
+  domain: Ecology
+  task: Dead-tree segmentation
+UniSite:
+  image: ghcr.io/maszhongming/agent4sci-unisite:latest
+  domain: Bioengineering
+  task: Ligand binding-site detection
+gRNAde:
+  image: ghcr.io/maszhongming/agent4sci-grnade:latest
+  domain: Bioengineering
+  task: 3D RNA inverse design

@@ -1,0 +1,23 @@
+# Secrets / local config
+.env
+config.yaml
+
+# Runtime artifacts
+runs/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+
+# OS
+.DS_Store
+
+# Local reference material (not part of the public release)
+*.pdf
+alignment_blog.html

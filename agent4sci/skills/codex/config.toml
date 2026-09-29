@@ -1,0 +1,3 @@
+# Codex project-level configuration
+# Most settings are handled via CLI flags (--full-auto / --yolo)
+# This file exists primarily so Codex recognizes the project root.
