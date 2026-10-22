@@ -5,7 +5,7 @@
 ### Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?
 
 <p align="center">
-  <a href="https://drive.google.com/file/d/1cozxXYHPMXKWYlLl5JM74JC-tXleUdyw/view?usp=sharing"><img src="https://img.shields.io/badge/📝-Paper-b31b1b" height="25"></a>
+  <a href="https://arxiv.org/abs/2610.28763"><img src="https://img.shields.io/badge/📝-Paper-b31b1b" height="25"></a>
   <a href="https://docs.google.com/document/d/1CQ4rETqN5odZHG9JVZFMNpkB2guhkaT-/edit?usp=sharing&ouid=103068526727574930835&rtpof=true&sd=true"><img src="https://img.shields.io/badge/✍️-Blog-d97757" height="25"></a>
   <a href="https://huggingface.co/datasets/MingZhong/agent4sci"><img src="https://img.shields.io/badge/🤗-Data-ffcc4d" height="25"></a>
   <img src="https://img.shields.io/badge/license-Apache--2.0-3da639" height="25">
@@ -137,6 +137,22 @@ tests/                # orchestration and unit tests (no GPU or Docker needed)
 ## 💾 Data & Images
 
 Each benchmark ships as a self-contained image on GHCR, resolved from [`registry.yaml`](agent4sci/registry.yaml). At startup the image downloads its data from the HuggingFace dataset [`MingZhong/agent4sci`](https://huggingface.co/datasets/MingZhong/agent4sci), keyed on `MODE`: `hillclimb` stages train and validation only, while `evaluate` stages the held-out test set. Test splits are never present while an agent hill-climbs.
+
+## 📚 Citation
+
+Agent4Sci is accepted to the NeurIPS 2026 Evaluations and Datasets Track. If you find it useful, please cite:
+
+```bibtex
+@misc{zhong2026automatingmlsciencefrontier,
+      title={Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?}, 
+      author={Ming Zhong and Stacy Li and Nicholas Carlini and Matthew Jagielski},
+      year={2026},
+      eprint={2610.28763},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2610.28763}, 
+}
+```
 
 ## 📄 License
 

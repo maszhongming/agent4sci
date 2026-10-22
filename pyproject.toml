@@ -27,7 +27,7 @@ dev = ["pytest>=7.0"]
 agent4sci = "agent4sci.cli:main"
 
 [project.urls]
-Paper = "https://drive.google.com/file/d/1cozxXYHPMXKWYlLl5JM74JC-tXleUdyw/view?usp=sharing"
+Paper = "https://arxiv.org/abs/2610.28763"
 Homepage = "https://github.com/maszhongming/agent4sci"
 
 [tool.setuptools]
