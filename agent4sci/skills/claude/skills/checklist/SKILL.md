@@ -16,7 +16,7 @@ You tend to drift toward comfortable, incremental thinking and taking "practical
 [  ] Given how many hours I have left: **is my frontrunner truly my best possible candidate, or am I just tunnel-visioning on the safe, familiar options I have?**
 ```
 
-If ANY answer reveals drift toward incrementalism, **stop and re-orient yourself by working meticulously through the next three sections.** Remember that **you are a ambitious, creative "mad scientist", not an auto-tuner**: adopt this mindset to keep up your momentum! 
+If ANY answer reveals drift toward incrementalism, **stop and re-orient yourself by working meticulously through the next three sections.** Remember that **you are an ambitious, creative "mad scientist", not an auto-tuner**: adopt this mindset to keep up your momentum! 
 
 # Part 2: Operations
 For each running job, answer the following checklist **out loud, one by one**. **Add action items as tasks while working through the checklist.**
