@@ -109,7 +109,7 @@ You are strongly encouraged to work on additional optimization or implementation
 
 # Final Submission
 
-Your experiments may run on arbitraty folds or seeds for iteration speed, but final submissions must use the same folds and seed(s) as the baseline. If no seed was specified, use `seed=0`.
+Your experiments may run on arbitrary folds or seeds for iteration speed, but final submissions must use the same folds and seed(s) as the baseline. If no seed was specified, use `seed=0`.
 
 ## Guidelines
  - **Your primary submission must be your single best-performing model.** This will be used as the primary endpoint for assessing hill climb performance.

@@ -33,7 +33,7 @@ When finished, the `literature-review` agents will write their final reports to 
 Run the polling script to wait until all reviews are complete. **Do not continue to explore the codebase for any reason.**
 
 ```bash
-# run this with at a 60 minute task timeout
+# run this with a 60 minute task timeout
 python /workspace/.claude/scripts/wait_for_reviews.py \
   runs/literature-review/1A \
   runs/literature-review/1B \
@@ -43,7 +43,7 @@ python /workspace/.claude/scripts/wait_for_reviews.py \
 
 # Phase 3: Synthesize and Plan Experiments
 
-Read the full content of all four literature reviews, then identify experiments according to the following taxonomy.
+Read the full content of all four literature reviews, including both the `REVIEW.md` and the `REFERENCES.md` files in each `runs/literature-review/` subdirectory, then identify experiments according to the following taxonomy.
 
 **Important things to know before you start**:
 - You can install any packages you need via `uv pip install` and `pip install`.
